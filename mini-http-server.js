@@ -95,10 +95,12 @@ webSvr.on("error", function (error) {
     //在控制台中输出错误信息 
     console.log(error); 
 });
-//开始侦听1234端口 
-webSvr.listen(1234, function () {
+//设置端口号
+var port = 1234
+//开始侦听端口 
+webSvr.listen(port, function () {
     //向控制台输出服务启动的信息 
-    console.log('WebServer running at http://127.0.0.1:1234/');
+    console.log('WebServer running at http://127.0.0.1:' + port + '/');
     
     //关闭服务启动计时器
     console.timeEnd('start WebServer need time');
