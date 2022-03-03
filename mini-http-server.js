@@ -96,7 +96,7 @@ webSvr.on("error", function (error) {
     console.log(error); 
 });
 //设置端口号
-var port = 1234
+var port = 1234;
 //开始侦听端口 
 webSvr.listen(port, function () {
     //向控制台输出服务启动的信息 
